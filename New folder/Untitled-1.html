@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            position: fixed;
+            bottom: 70;
+        }
+        
+        .flex-item {
+            height: 100%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        
+        .flex-item2 {
+            position: fixed;
+            bottom: 79px;
+            top: 168px;
+            box-sizing: border-box;
+        }
+        
+        div.container {
+            position: fixed;
+            bottom: 79px;
+            right: 10px;
+            left: 10px;
+            top: 10px;
+            border: 1px solid #2B2B2B;
+        }
+        
+        button {
+            background-color: #B30838;
+            color: white;
+            border: none;
+            padding: 12px 0px;
+            display: inline-block;
+            font-size: 16px;
+            margin: 40px 4px 2px 4px;
+            cursor: pointer;
+            position: fixed;
+            top: 350;
+            text-align: center;
+            box-shadow: 0 4px #1F1F1F;
+            border-radius: 5px;
+            /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+        }
+        
+        button:hover {
+            opacity: 0.95;
+        }
+        
+        button:active {
+            box-shadow: 0 1px #1F1F1F;
+            transform: translateY(2.5px);
+        }
+        
+        header,
+        footer {
+            padding: 1em;
+            color: white;
+            clear: left;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #1A1A1A;
+            position: fixed;
+            bottom: 0;
+            /* And if you want the div to be full-width: */
+            left: 0;
+            right: 0;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2B2B2B;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        <!-- nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+        
+        -->nav {
+            padding: 1px;
+            margin: 10px;
+            list-style-type: none;
+            position: relative;
+        }
+        
+        article {
+            margin-left: 255px;
+            border-left: 1px solid gray;
+            padding: 1em 1em 0em 1em;
+            overflow: hidden;
+        }
+        
+        #patientimage {
+            color: #B30838;
+        }
+        
+        a {
+            padding: 0;
+        }
+        
+        #imagenumber1 {
+            width: 10%;
+            height: 10%;
+            padding-right: 15px;
+            padding-left: -20px;
+        }
+    </style>
+</head>
+
+<body class=flex-container>
+
+    <div class="container">
+        <div class=flex-item>
+            <header>
+                <a href="http://www.kalos-inc.com/index.html" target="_blank title=" Kalos, Inc - Pharmacy Software, Design and Printing Services "><img src="http://www.kalos-inc.com/images/logo.png " alt="Kalos, Inc - Pharmacy Software, Design and Printing Services
+                    " " id="logographic"></a>
+            </header>
+            <ul>
+                <li><a class="active" href="http://www.kalos-inc.com/index.html" target="_blank">Kalos-Inc Home</a></li>
+                <li><a class="active" href="http://www.kalos-inc.com/index.html" target="_blank">Documentation</a></li>
+            </ul>
+
+            <nav>
+                <img src="patient_edited.jpg" alt="Patient Visit Generator" id=patientimage>
+            </nav>
+
+            <article class=flex-item2>
+                <h1>Patient Visit Generator</h1>
+                <p>Patient Visit Generator is a tool designed to work in conjunction with Kalos' CIPS and ProPharm programs. Patient Visit Generator is used to create sample scripts which can then be sent to ProPharm, CIPS, or a TIF file.</p>
+                <br/>
+                <button onclick="window.open('PVG-1-1-0.exe')"><img src="downloadimage.png" id=imagenumber1 />Download Patient Visit Generator</button>
+            </article>
+        </div>
+        <footer>Authors: Zach Fabin, Ben Bylsma, Ryan McIntosh <br />Copyright &copy; Kalos-Inc</footer>
+
+    </div>
+
+</body>
+
+</html>
